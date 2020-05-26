@@ -1,0 +1,48 @@
+Day Wise Work Log
+
+Introduction to VCS(Version Control System)
+Download and Installation of Git
+Basic Linux Commands
+ls -----list of the folders and files in the current directory
+ls -a -----to get list of hidden folders
+cd filename/foldername/directoryname -----to go to the particular file, folder or directory
+cd ------ to directly to the parent path
+cd . . ----- go to the previous state
+pwd ----- shows the current path
+mkdir directoryname ------- to create folder
+clear ----- to clear the command prompt
+
+FILE MANAGEMENT
+touch filename ----to create file
+echo “text” > filename --------used to insert data into the mentioned file
+cat filename -----to read the file
+gedit filename -------to insert multiple lines of data into the file(doesn’t work in windows)
+nano filename ------to insert multiple lines of data into the file(use for windows)
+rm ----remove
+rmdir ------remove directory
+
+Basic Git Commands
+git --version --------to know the version of your git downloaded
+git init ------initialize git init repository
+git clone <remote-url> --------to get existing repository
+rm -rf .git ------to undo git init command
+git status -------to see the status of the folder and its files
+git add filename ------to move the specified file to staging area
+git add . -------- to add all the files in the repository to the staging area
+git commit -m “Message” -----to save the changes to the repository
+git log --------provides all the commits made in the repository
+If git commit not working -
+git config --global user.email ‘email id’
+git config --global user.name 'YourName'
+git config user.email
+git config user.name
+
+Sync the Data - Local to Server / Server to Local
+The name of the folder in the system and git repository in github should match
+git remote add LocalFolderName Remote-url --------attach the online git repository to local folder
+git remote show
+git remote -v
+git pull foldername master
+git push -f --set-upstream foldername master
+Follow all these steps to add and push all the data in the local folder to online git repository
+
